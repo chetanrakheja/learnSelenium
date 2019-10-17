@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="18953" started-at="2019-10-17T11:15:28Z" finished-at="2019-10-17T11:15:47Z">
+  <suite name="Default suite" duration-ms="11386" started-at="2019-10-17T11:47:58Z" finished-at="2019-10-17T11:48:09Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="18953" started-at="2019-10-17T11:15:28Z" finished-at="2019-10-17T11:15:47Z">
-      <class name="demo.DemoAmazonPOMStyle">
-        <test-method status="PASS" signature="invokeBrowser()[pri:0, instance:demo.DemoAmazonPOMStyle@d8355a8]" name="invokeBrowser" is-config="true" duration-ms="15327" started-at="2019-10-17T11:15:28Z" finished-at="2019-10-17T11:15:44Z">
+    <test name="Default test" duration-ms="11386" started-at="2019-10-17T11:47:58Z" finished-at="2019-10-17T11:48:09Z">
+      <class name="demo.DemoAmazonPageFatory">
+        <test-method status="PASS" signature="invokeBrowser()[pri:0, instance:demo.DemoAmazonPageFatory@d8355a8]" name="invokeBrowser" is-config="true" duration-ms="5864" started-at="2019-10-17T11:47:58Z" finished-at="2019-10-17T11:48:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invokeBrowser -->
-        <test-method status="PASS" signature="verifySearchOnHomepage()[pri:0, instance:demo.DemoAmazonPOMStyle@d8355a8]" name="verifySearchOnHomepage" duration-ms="2796" started-at="2019-10-17T11:15:44Z" finished-at="2019-10-17T11:15:46Z">
+        <test-method status="PASS" signature="verifySearchOnHomepage()[pri:0, instance:demo.DemoAmazonPageFatory@d8355a8]" name="verifySearchOnHomepage" duration-ms="4808" started-at="2019-10-17T11:48:04Z" finished-at="2019-10-17T11:48:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchOnHomepage -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:demo.DemoAmazonPOMStyle@d8355a8]" name="closeBrowser" is-config="true" duration-ms="809" started-at="2019-10-17T11:15:46Z" finished-at="2019-10-17T11:15:47Z">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:demo.DemoAmazonPageFatory@d8355a8]" name="closeBrowser" is-config="true" duration-ms="690" started-at="2019-10-17T11:48:08Z" finished-at="2019-10-17T11:48:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- demo.DemoAmazonPOMStyle -->
+      </class> <!-- demo.DemoAmazonPageFatory -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
