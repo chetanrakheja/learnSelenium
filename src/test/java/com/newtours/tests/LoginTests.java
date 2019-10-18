@@ -30,7 +30,8 @@ public class LoginTests extends Basetests{
 		SoftAssert softAssert = new SoftAssert();
 		softAssert.assertEquals(actualTitle, expectedTitle);
 		
-        softAssert.assertTrue(homepage.verifySignOffLinkIsPresent());
+//        softAssert.assertTrue(homepage.verifySignOffLinkIsPresent());
+        softAssert.assertFalse(homepage.verifySignOffLinkIsPresent());
 		
 		softAssert.assertAll();
 		

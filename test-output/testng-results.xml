@@ -1,25 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="11386" started-at="2019-10-17T11:47:58Z" finished-at="2019-10-17T11:48:09Z">
+  <suite name="Default suite" duration-ms="11500" started-at="2019-10-18T09:01:35Z" finished-at="2019-10-18T09:01:47Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="11386" started-at="2019-10-17T11:47:58Z" finished-at="2019-10-17T11:48:09Z">
-      <class name="demo.DemoAmazonPageFatory">
-        <test-method status="PASS" signature="invokeBrowser()[pri:0, instance:demo.DemoAmazonPageFatory@d8355a8]" name="invokeBrowser" is-config="true" duration-ms="5864" started-at="2019-10-17T11:47:58Z" finished-at="2019-10-17T11:48:04Z">
+    <test name="Default test" duration-ms="11500" started-at="2019-10-18T09:01:35Z" finished-at="2019-10-18T09:01:47Z">
+      <class name="com.newtours.tests.LoginTests">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.newtours.tests.LoginTests@32eebfca]" name="setup" is-config="true" duration-ms="4967" started-at="2019-10-18T09:01:35Z" finished-at="2019-10-18T09:01:40Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- invokeBrowser -->
-        <test-method status="PASS" signature="verifySearchOnHomepage()[pri:0, instance:demo.DemoAmazonPageFatory@d8355a8]" name="verifySearchOnHomepage" duration-ms="4808" started-at="2019-10-17T11:48:04Z" finished-at="2019-10-17T11:48:08Z">
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verifyTitleOfThePage()[pri:0, instance:com.newtours.tests.LoginTests@32eebfca]" name="verifyTitleOfThePage" duration-ms="13" started-at="2019-10-18T09:01:40Z" finished-at="2019-10-18T09:01:40Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifySearchOnHomepage -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:demo.DemoAmazonPageFatory@d8355a8]" name="closeBrowser" is-config="true" duration-ms="690" started-at="2019-10-17T11:48:08Z" finished-at="2019-10-17T11:48:09Z">
+        </test-method> <!-- verifyTitleOfThePage -->
+        <test-method status="PASS" signature="afterEveryTestCase(org.testng.ITestResult)[pri:0, instance:com.newtours.tests.LoginTests@32eebfca]" name="afterEveryTestCase" is-config="true" duration-ms="2" started-at="2019-10-18T09:01:40Z" finished-at="2019-10-18T09:01:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyTitleOfThePage status=SUCCESS method=LoginTests.verifyTitleOfThePage()[pri:0, instance:com.newtours.tests.LoginTests@32eebfca] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- demo.DemoAmazonPageFatory -->
+        </test-method> <!-- afterEveryTestCase -->
+        <test-method status="FAIL" signature="verifyLoginToNewTours()[pri:1000, instance:com.newtours.tests.LoginTests@32eebfca]" name="verifyLoginToNewTours" duration-ms="5595" started-at="2019-10-18T09:01:40Z" finished-at="2019-10-18T09:01:46Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [false] but found [true]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+at com.newtours.tests.LoginTests.verifyLoginToNewTours(LoginTests.java:36)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginToNewTours -->
+        <test-method status="PASS" signature="afterEveryTestCase(org.testng.ITestResult)[pri:0, instance:com.newtours.tests.LoginTests@32eebfca]" name="afterEveryTestCase" is-config="true" duration-ms="297" started-at="2019-10-18T09:01:46Z" finished-at="2019-10-18T09:01:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLoginToNewTours status=FAILURE method=LoginTests.verifyLoginToNewTours()[pri:1000, instance:com.newtours.tests.LoginTests@32eebfca] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEveryTestCase -->
+        <test-method status="PASS" signature="cleanUp()[pri:0, instance:com.newtours.tests.LoginTests@32eebfca]" name="cleanUp" is-config="true" duration-ms="602" started-at="2019-10-18T09:01:46Z" finished-at="2019-10-18T09:01:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method status="PASS" signature="postCleanup()[pri:0, instance:com.newtours.tests.LoginTests@32eebfca]" name="postCleanup" is-config="true" duration-ms="310" started-at="2019-10-18T09:01:47Z" finished-at="2019-10-18T09:01:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCleanup -->
+      </class> <!-- com.newtours.tests.LoginTests -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
