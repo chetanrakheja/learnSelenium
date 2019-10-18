@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="11500" started-at="2019-10-18T09:01:35Z" finished-at="2019-10-18T09:01:47Z">
+  <suite name="Default suite" duration-ms="14910" started-at="2019-10-18T09:25:33Z" finished-at="2019-10-18T09:25:48Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="11500" started-at="2019-10-18T09:01:35Z" finished-at="2019-10-18T09:01:47Z">
+    <test name="Default test" duration-ms="14910" started-at="2019-10-18T09:25:33Z" finished-at="2019-10-18T09:25:48Z">
       <class name="com.newtours.tests.LoginTests">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.newtours.tests.LoginTests@32eebfca]" name="setup" is-config="true" duration-ms="4967" started-at="2019-10-18T09:01:35Z" finished-at="2019-10-18T09:01:40Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.newtours.tests.LoginTests@32eebfca]" name="setup" is-config="true" duration-ms="4789" started-at="2019-10-18T09:25:33Z" finished-at="2019-10-18T09:25:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="verifyTitleOfThePage()[pri:0, instance:com.newtours.tests.LoginTests@32eebfca]" name="verifyTitleOfThePage" duration-ms="13" started-at="2019-10-18T09:01:40Z" finished-at="2019-10-18T09:01:40Z">
+        <test-method status="PASS" signature="verifyTitleOfThePage()[pri:0, instance:com.newtours.tests.LoginTests@32eebfca]" name="verifyTitleOfThePage" duration-ms="11" started-at="2019-10-18T09:25:37Z" finished-at="2019-10-18T09:25:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTitleOfThePage -->
-        <test-method status="PASS" signature="afterEveryTestCase(org.testng.ITestResult)[pri:0, instance:com.newtours.tests.LoginTests@32eebfca]" name="afterEveryTestCase" is-config="true" duration-ms="2" started-at="2019-10-18T09:01:40Z" finished-at="2019-10-18T09:01:40Z">
+        <test-method status="PASS" signature="afterEveryTestCase(org.testng.ITestResult)[pri:0, instance:com.newtours.tests.LoginTests@32eebfca]" name="afterEveryTestCase" is-config="true" duration-ms="2" started-at="2019-10-18T09:25:37Z" finished-at="2019-10-18T09:25:37Z">
           <params>
             <param index="0">
               <value>
@@ -26,7 +26,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterEveryTestCase -->
-        <test-method status="FAIL" signature="verifyLoginToNewTours()[pri:1000, instance:com.newtours.tests.LoginTests@32eebfca]" name="verifyLoginToNewTours" duration-ms="5595" started-at="2019-10-18T09:01:40Z" finished-at="2019-10-18T09:01:46Z">
+        <test-method status="FAIL" signature="verifyLoginToNewTours()[pri:1000, instance:com.newtours.tests.LoginTests@32eebfca]" name="verifyLoginToNewTours" duration-ms="9163" started-at="2019-10-18T09:25:37Z" finished-at="2019-10-18T09:25:47Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[The following asserts failed:
@@ -68,7 +68,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginToNewTours -->
-        <test-method status="PASS" signature="afterEveryTestCase(org.testng.ITestResult)[pri:0, instance:com.newtours.tests.LoginTests@32eebfca]" name="afterEveryTestCase" is-config="true" duration-ms="297" started-at="2019-10-18T09:01:46Z" finished-at="2019-10-18T09:01:46Z">
+        <test-method status="PASS" signature="afterEveryTestCase(org.testng.ITestResult)[pri:0, instance:com.newtours.tests.LoginTests@32eebfca]" name="afterEveryTestCase" is-config="true" duration-ms="301" started-at="2019-10-18T09:25:47Z" finished-at="2019-10-18T09:25:47Z">
           <params>
             <param index="0">
               <value>
@@ -79,11 +79,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterEveryTestCase -->
-        <test-method status="PASS" signature="cleanUp()[pri:0, instance:com.newtours.tests.LoginTests@32eebfca]" name="cleanUp" is-config="true" duration-ms="602" started-at="2019-10-18T09:01:46Z" finished-at="2019-10-18T09:01:47Z">
+        <test-method status="PASS" signature="cleanUp()[pri:0, instance:com.newtours.tests.LoginTests@32eebfca]" name="cleanUp" is-config="true" duration-ms="619" started-at="2019-10-18T09:25:47Z" finished-at="2019-10-18T09:25:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanUp -->
-        <test-method status="PASS" signature="postCleanup()[pri:0, instance:com.newtours.tests.LoginTests@32eebfca]" name="postCleanup" is-config="true" duration-ms="310" started-at="2019-10-18T09:01:47Z" finished-at="2019-10-18T09:01:47Z">
+        <test-method status="PASS" signature="postCleanup()[pri:0, instance:com.newtours.tests.LoginTests@32eebfca]" name="postCleanup" is-config="true" duration-ms="289" started-at="2019-10-18T09:25:48Z" finished-at="2019-10-18T09:25:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postCleanup -->

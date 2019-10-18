@@ -2,6 +2,7 @@ package com.newtours.tests;
 
 
 import java.util.Date;
+import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestResult;
@@ -9,6 +10,8 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeSuite;
+
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
@@ -19,6 +22,7 @@ import com.newtours.pages.RegisterPage;
 
 import commonLibs.implementation.CommonDriver;
 import commonLibs.implementation.ScreenshotControl;
+import commonLibs.utils.ConfigReadUtils;
 
 
 public class Basetests {
@@ -42,6 +46,8 @@ public class Basetests {
 	static String testExecutionStartTime;
 	
 	static String ScreenshotFilename;
+	static String configFilename;
+	static Properties configProperties;
 	
 	
 	static {
@@ -60,16 +66,24 @@ public class Basetests {
 		
 		extentReporter.attachReporter(htmlReporter);
 		
-		ScreenshotFilename = String.format("%s/reports/screenshots/newtoursTestReport_%s.jpeg",
-				currentWorkingDirectory,
-				testExecutionStartTime);
+//		ScreenshotFilename = String.format("%s/screenshots/%s_%s.jpeg",
+//				currentWorkingDirectory,
+//				testExecutionStartTime);
+		
+		
+//		TODO setup config Properties properly
+		configFilename = String.format("%s/config.properties", currentWorkingDirectory);
 		
 	
 		}
 	
+	@BeforeSuite
+	public void preSetup() throws Exception {
+		configProperties = ConfigReadUtils.readProperties(configFilename);
+		
+	}
 	
-	
-	@BeforeClass
+	@BeforeClass(alwaysRun = true)
 	public void setup() throws Exception {
 		
 		extentTest = extentReporter.createTest("Test Setup - Setting the Enviroment");
@@ -105,9 +119,14 @@ public class Basetests {
 		driver = cmnDriver.getDriver();
 	}
 
-	@AfterMethod
+	@AfterMethod(alwaysRun = true)
 	public void afterEveryTestCase(ITestResult testResult) throws Exception {
 		String testcasename= testResult.getName();
+		
+		ScreenshotFilename = String.format("%s/screenshots/%s_%s.jpeg",
+				currentWorkingDirectory,
+				testcasename,
+				testExecutionStartTime);
 		
 		if (testResult.getStatus() == ITestResult.SUCCESS) {
 			extentTest.log(Status.PASS,testcasename);
@@ -123,7 +142,7 @@ public class Basetests {
 			
 	}
 	
-	@AfterClass
+	@AfterClass(alwaysRun = true)
 	public void cleanUp() throws Exception {
 		cmnDriver.closeAllBrowsers();
 	}
